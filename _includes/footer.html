@@ -1,0 +1,50 @@
+    <footer>
+        <div class="main">
+        	<div class="container_16">
+            	<div class="grid_16">
+                    <div class="wrapper footer-border">
+                        <div class="grid_16">
+                            <div class="footer-text-strong">
+                                <b>Kiss Festés &copy; 2014 </b> &nbsp;|&nbsp; kissfestes@gmail.com &nbsp;|&nbsp; +36/30-950-0598 |&nbsp; +36/20-387-7223
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </footer>
+
+ 	{% if page.location == 'gallery' %}
+	<script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                $("area[rel^='prettyPhoto']").prettyPhoto();
+                
+                $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_rounded',slideshow:3000, autoplay_slideshow: false});
+                $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+
+                $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false});
+                
+
+            });
+    </script>
+    {% endif %}
+
+	{% if page.location != 'gallery' %}
+	<script type="text/javascript"> Cufon.now(); </script>
+    
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('.slider')._TMS({
+			duration:800,
+			easing:'easeOutQuad',
+			preset:'simpleFade',
+			pagination:'.pagination',
+			slideshow:7000,
+			banners:'fade',
+			waitBannerAnimation:false,
+			pauseOnHover:true
+		})
+	});
+	</script>
+	{% endif %}

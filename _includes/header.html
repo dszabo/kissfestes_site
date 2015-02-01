@@ -1,0 +1,96 @@
+    <header>
+    	<div class="main p2 index-2">
+			<div class="container_16">
+            	<div class="wrapper">
+                    <div class="grid_7 suffix_4">
+                        <h1>
+                            <a href="/"></a>
+                            <span>
+                                Homlokzatfestés<br/>
+                                Fa- fal-, fémfelületek védelme<br/>
+                                Egyéb építőipari munkák
+                            </span>
+                        </h1>
+                    </div>
+                    
+                    <!--
+                    <div class="grid_5">
+                        <div class="search-style">
+                            <form name="search" id="search-form">
+                                <input class="searchtext" name="keyword" type="text" value="Site Search"  onBlur="if(this.value=='') this.value='Site Search'" onFocus="if(this.value =='Site Search' ) this.value=''" />
+                                <input class="submitbutton" type="submit" value="" />
+                            </form>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="grid_16">
+                    <nav>
+                        <ul class="menu">
+                            <li><a {% if page.location == 'index' %} class="active" {% endif %} href="/"><strong>Rólunk</strong></a></li>
+                            <li><a {% if page.location == 'services' %} class="active" {% endif %} href="/szolgaltatasok"><strong>Szolgáltatások</strong></a></li>
+                            <li><a {% if page.location == 'gallery' %} class="active" {% endif %} href="/galeria"><strong>Galéria</strong></a></li>
+                            <li><a {% if page.location == 'partners' %} class="active" {% endif %}href="/partnereink"><strong>Partnereink</strong></a></li>
+                            <li><a {% if page.location == 'contact' %} class="active" {% endif %}href="/kapcsolat"><strong>Kapcsolat</strong></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        {% if page.location == 'index' %}
+    	<div class="wrapper index-1">    
+            <div class="slider-wrapper">
+                <div class="slider-padding">
+                    <div class="slider">
+                        <ul class="items">
+                            <li><img src="{% if page.location != 'index' %}../{% endif %}images/image1.jpg" alt="">
+                                <div class="banner">
+                                    <div class="padding">
+                                        <strong class="bl">Szobafestés</strong>
+                                        <!-- <div class="text3"><strong class="text1 padding2">&amp;</strong></div> -->
+                                        <div class="padding3">
+                                            <strong class="text1">Mázolás, tapétázás</strong>
+                                            <p>Széles anyagkínálat, aktuális trendek</p>
+                                            <span class="button"><a href="/szolgaltatasok">Bővebben</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><img src="{% if page.location != 'index' %}../{% endif %}images/image2.jpg" alt="">
+                                <div class="banner">
+                                    <div class="padding">
+                                        <strong class="bl">Lakásfelújítás</strong>
+                                        <div class="padding4">
+                                            <strong class="text1">Dekorációs munkák </strong>
+                                            <p>Megbízható tapasztalat teljes felújítások lebonyolításában is.</p>
+                                            <span class="button"><a href="/szolgaltatasok">Szolgáltatásaink</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><img src="{% if page.location != 'index' %}../{% endif %}images/image3.jpg" alt="">
+                                <div class="banner">
+                                    <div class="padding">
+                                        <strong class="bl">Szakmai tippek</strong>
+                                        <div class="padding4">
+                                            <strong class="text1">&amp; on-line trükkök</strong>
+                                            <p>Fúrás által keletkezett lyukak eltüntetése? Hogyan védheti meg hathatósan falainak felületeit? Folyamatosan bővülő jótanácsaink az Ön számára is hasznosak lehetnek!</p>
+                                            <span class="button"><a href="/blog">Olvassa el tippjeinket</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pagination">
+                            <li><a href="#"><span>1</span></a></li>
+                            <li><a href="#"><span>2</span></a></li>
+                            <li><a href="#"><span>3</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+        {% endif %}
+    </header>
+    
