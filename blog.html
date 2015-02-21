@@ -1,0 +1,59 @@
+---
+layout: default
+title: Blog
+location: blog
+permalink: /blog/
+---
+
+<section id="content">
+        <div class="main">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="wrapper bot-pad margin-bot">                        
+                        <div class="alpha grid_11 suffix_1">
+                            <h3 class="indent-bot">Blog</h3>
+
+                             <ul class="post-list">
+                                {% for post in site.posts %}
+                                  <li>
+                                    <span class="post-meta">
+
+                                    {% assign m = post.date | date: "%-m" %}
+                                    {{ post.date | date: "%Y." }}
+
+                                    {% case m %}
+                                      {% when '1' %}Január
+                                      {% when '2' %}Február
+                                      {% when '3' %}Március
+                                      {% when '4' %}Április
+                                      {% when '5' %}Május
+                                      {% when '6' %}Június
+                                      {% when '7' %}Július
+                                      {% when '8' %}Augusztus
+                                      {% when '9' %}Szeptember
+                                      {% when '10' %}Október
+                                      {% when '11' %}November
+                                      {% when '12' %}December
+                                    {% endcase %}
+                                    {{ post.date | date: "%-d." }}
+
+                                       
+                                    </span>
+
+                                    <h3 class="indent-bot5">
+                                      <a class="link-11" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                    </h3>
+                                    <p class="text-33">
+                                    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                                    </p>
+                                  </li>
+                                {% endfor %}
+                              </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

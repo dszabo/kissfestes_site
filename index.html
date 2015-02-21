@@ -31,25 +31,19 @@ location: index
                     </div>
                     <div class="wrapper border-2 bot-pad margin-bot">
                         <div class="alpha grid_11 suffix_1">
-                            <h3 class="indent-bot2">Tippek és trükkök</h3>
+                            <h3 class="indent-bot2"><a class="link-11" href="/blog">Blog, Tippek és trükkök</a></h3>
                             <div class="wrapper">
-                                <div class="grid_4 suffix_1">
-                                    <figure class="p3"><img src="images/page1-img1.jpg" alt="" /></figure>
-                                    <p class="indent-bot2">Lyukak a falon. Sok esetben előfordul, lakáscsere vagy albérletváltáskor hogy fölösleges tipli lyuk tátong a falon.</p>
-                                    <a class="link-1" href="tipsandtricks.html#holeinwall">Bővebben</a>
-                                </div>
-                                <div class="grid_4 suffix_1">
-                                    <figure class="p3"><img src="images/page1-img2.jpg" alt="" /></figure>
-                                    <p class="indent-bot2">Zsírkréta vagy ceruza a gyereknek? Festő szemmel mindenképp a ceruza! Kisgyerekes megrendelőknél visszatérő igény, hogy...</p> 
 
-                                    <a class="link-1" href="tipsandtricks.html#kidsandwalls">Bővebben</a>
-                                </div>
-                                <div class="grid_4">
-                                    <figure class="p3"><img src="images/page3-img1.jpg" alt="" /></figure>
-                                    <p class="indent-bot2">A szürke színről. Érdekes kérdés ez manapság, hogy vajon a szürke szín kitört-e már az ipari jellegű, ronda,borús státuszából.</p> 
-                                    <a class="link-1" href="tipsandtricks.html#aboutgrays">Bővebben</a>
+                                {% for post in site.posts limit:3 %}
+                                <div class="grid_4 suffix_1">
+                                    <figure class="p3"><img src="images/page1-img{{forloop.index}}.jpg" alt="" /></figure>
+                                    <p class="indent-bot22">
+                                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                                    </p>
+                                    <a class="link-11" href="{{ post.url | prepend: site.baseurl }}">Bővebben</a>
                                 </div>
 
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
