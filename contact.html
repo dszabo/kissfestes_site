@@ -50,25 +50,19 @@ permalink: /kapcsolat/
                     <div class="grid_8">
                          <h3 class="indent-bot2">Üzenet küldése</h3>
 
-                        <form id="contact-form">
+                        <form id="contact-form" method="POST" action="http://formspree.io/kissepitok@gmail.com">
                             <div class="success">Küldés sikeres!<br>
                             <strong>Hamarosan kapcsolatba lépünk Önnel.</strong> </div>
                                 <fieldset>
-                                    <label class="name">
-                                      <input type="text" value="Név">
-                                      <span class="error">*Hibás név.</span> <span class="empty">*Kérem adja meg az Ön nevét.</span> </label>
                                     <label class="email">
-                                      <input type="email" value="E-mail">
+                                      <input type="email" value="E-mail" name="_replyto">
                                       <span class="error">*Hibás e-mail cím.</span> <span class="empty">*Kérem adja meg e-mail címét.</span> </label>
-                                    <label class="phone">
-                                      <input type="tel" value="Telefon">
-                                      <span class="error">*Hibás telefonszám.</span> <span class="empty">*Kérem adja meg telefonszámát.</span> </label>
                                     <label class="message">
-                                      <textarea>Üzenete</textarea>
+                                      <textarea name="body">Üzenete</textarea>
                                       <span class="error">*Hiányzó üzenet.</span> <span class="empty">*Kérem írja meg üzenetét.</span> </label>
+                                      <input type="hidden" name="_next" value="{{site.baseurl}}/kapcsolatfelvetel" />
                                     <div class="buttons-wrapper">
-                                        <a href="#" class="link-1" data-type="reset">Töröl</a>
-                                        <a href="#" class="link-1" data-type="submit">Elküld</a>
+                                        <a href="#" class="link-1" data-type="submit" onClick="document.getElementById('contact-form').submit()">Elküld</a>
                                     </div>
                                 </fieldset>
                         </form>

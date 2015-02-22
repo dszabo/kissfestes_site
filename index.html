@@ -79,13 +79,16 @@ location: index
                         </div>
                         <div class="grid_6 omega">
                             <h3 class="margin-bot">Kapcsolatfelvétel</h3>
-                            <form name="quick" id="quick-form">
+
+
+                            <form method="POST" name="quick" id="quick-form" action="http://formspree.io/kissepitok@gmail.com">
                                 <label class="label-1">
-                                    <input class="quicktext" name="keyword" type="text" value="Az Ön E-Mail címe:"  onBlur="if(this.value=='') this.value='Az Ön E-Mail címe:'" onFocus="if(this.value =='Az Ön E-Mail címe:' ) this.value=''" />
+                                    <input class="quicktext" name="_replyto" type="email" value="Az Ön E-Mail címe:"  onBlur="if(this.value=='') this.value='Az Ön E-Mail címe:'" onFocus="if(this.value =='Az Ön E-Mail címe:' ) this.value=''" />
                                 </label>
                                 <label class="label-2">
-                                    <textarea class="quickmessage" onBlur="if(this.value=='') this.value='Üzenet:'" onFocus="if(this.value =='Üzenet:' ) this.value=''">Üzenet:</textarea>
+                                    <textarea class="quickmessage" name="body" onBlur="if(this.value=='') this.value='Üzenet:'" onFocus="if(this.value =='Üzenet:' ) this.value=''">Üzenet:</textarea>
                                 </label>
+                                <input type="hidden" name="_next" value="{{site.baseurl}}/kapcsolatfelvetel" />
                                 <div class="alignright indent-r">
                                     <span class="button2"><a href="#" onClick="document.getElementById('quick-form').submit()">Küldés</a></span>
                                 </div>
