@@ -2,8 +2,9 @@
 layout: post
 title:  "A szürke színről"
 date:   2015-02-13 11:23:00
-permalink: /blog/:title.html
+permalink: /blog/:title/
 comments: true
+ispost: true
 ---
 
 Érdekes kérdés ez manapság, hogy vajon a szürke szín kitört-e már az ipari jellegű, ronda, borús státuszából. 

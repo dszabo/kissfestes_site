@@ -2,8 +2,9 @@
 layout: post
 title:  "Lyukak a falon?"
 date:   2015-01-31 17:43:00
-permalink: /blog/:title.html
+permalink: /blog/:title/
 comments: true
+ispost: true
 ---
 
 Sok esetben előfordul lakáscsere vagy albérletváltáskor, hogy fölösleges tipli lyuk tátong a falon. Eltüntetése legegyszerűbben akril tömítővel lehetséges. 

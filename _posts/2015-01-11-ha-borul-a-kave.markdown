@@ -2,8 +2,9 @@
 layout: post
 title:  "Ha borul a kávé"
 date:   2015-01-11 12:23:00
-permalink: /blog/:title.html
+permalink: /blog/:title/
 comments: true
+ispost: true
 ---
 
 Sokszor a koffein helyett az eldurranó kávéfőző ébreszti a családot. A kávéfolt alapos probléma. A hagyományos diszperziós festékeken több réteg után is átmaródhatnak, világos szín, pláne fehér esetén még nehezebb az eltüntetésük. Ilyenkor javasoljuk a speciális folt takaró festékeket. A legtöbb festékgyár termékei közt megtalálhatók, a teljesség igénye nélkül, Héra Folttakaró, Polifarbe Inntaler Izoláló festék, oldószeresek közül a Wallkyd. 

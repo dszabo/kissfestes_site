@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  	{% if page.ispost == null %}
+    	{% include head.html %}
+    {% else %}
+    	{% include head_posts.html %}
+ 	{% endif %}
 
   <body>
 

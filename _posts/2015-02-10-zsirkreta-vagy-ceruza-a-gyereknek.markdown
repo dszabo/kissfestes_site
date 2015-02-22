@@ -2,8 +2,9 @@
 layout: post
 title:  "Zsírkéta vagy ceruza a gyereknek?"
 date:   2015-02-10 17:43:00
-permalink: /blog/:title.html
+permalink: /blog/:title/
 comments: true
+ispost: true
 ---
 
 Festő szemmel mindenképp a ceruza! Kisgyerekes megrendelőknél visszatérő igény, hogy mosható festéket kérnek a falakra. hogy a későbbiekben könnyedén elbánhassanak a „kreatív balesetekkel”.
